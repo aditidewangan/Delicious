@@ -204,7 +204,6 @@ app.post("/connect", function(req,res){
   phone : req.body.postPhone,
   message : req.body.postMessage,
 });
-
 connect.save(function(err){
   if(!err){
     res.status(201).redirect("/recipes");
@@ -212,6 +211,11 @@ connect.save(function(err){
   });
 });
 
-app.listen(3000, function() {
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+
+app.listen(port, function() {
   console.log("Server has started successfully");
 });
