@@ -1,0 +1,23 @@
+<%- include("partials/header"); -%>
+
+    <h1>CONNECT</h1>
+
+    <form action="/connect" method="post">
+  <div class="form-group">
+    <input  class="form-control" type="text" name="postName" placeholder="Enter your name" required>
+  </div>
+  <div class="form-group">
+    <input class="form-control" type="email" name="postEmail" placeholder="Enter your email" required>
+  </div>
+  <div class="form-group">
+    <input class="form-control" type="Phone" name="postPhone" placeholder="Enter your phone">
+  </div>
+  <div class="form-group">
+    <textarea  class="form-control" name="postMessage" rows="4" cols="40" placeholder="Type a message...." required></textarea>
+  </div>
+  <div>
+    <button type="submit" class="btn btn-dark">Submit</button>
+  </div>
+</form>
+
+<%- include("partials/footer"); -%>

@@ -1,0 +1,26 @@
+<%- include("partials/header"); -%>
+
+<h1>RECIPES</h1>
+
+<form action="/recipes" method="GET" class="form-inline">
+  <div class="form-group feature">
+  <input type="text" name="search" class="form-control" placeholder="Search Food...">
+  <input class="btn btn-secondary feat" type="submit" value="Search">
+  </div>
+</form>
+
+
+<div class="row food">
+    <% posts.forEach(function(post){ %>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a href="/posts/<%=post._id%>" class="col text-center footer-link">
+          <div class="category_img shadow">
+            <img src="..\upload\gallery\<%=post.photo%>" alt="<%=post.title%>">
+          </div>
+          <div class="pt-1"><%=post.type%></div>
+        </a>
+      </div>
+      <% }) %>
+</div>
+
+<%- include("partials/footer"); -%>

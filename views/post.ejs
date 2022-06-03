@@ -1,0 +1,29 @@
+
+<%- include("partials/header"); -%>
+
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb food">
+            <li class="breadcrumb-item"><a class="footer-link" href="/recipes">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><%=type%></li>
+          </ol>
+        </nav>
+
+<div class="row food">
+  <div class="col-lg-6">
+    <img src="..\upload\gallery\<%=photo%>" class="img-fluid " alt="<%=title%>" >
+  </div>
+  <div class="col-lg-6">
+      <h2><%=type%></h2>
+      <p><%=title%></p>
+      <br>
+      <h4>Cooking Instructions</h4>
+      <br>
+      <div style="white-space: pre-line;">
+          <p><%=recipe%></p>
+      </div>
+      <br>
+      <p>- <%=name%></p>
+      </div>
+      </div>
+
+<%- include("partials/footer"); -%>

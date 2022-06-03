@@ -1,0 +1,33 @@
+<%- include("partials/header"); -%>
+
+<h1>RECIPES</h1>
+
+<form action="/admin" method="GET" class="form-inline">
+  <div class="form-group feature">
+  <input type="text" name="search" class="form-control" placeholder="Search Food...">
+  <input class="btn btn-secondary feat" type="submit" value="Search">
+  </div>
+</form>
+
+
+<div class="row food">
+    <% posts.forEach(function(post){ %>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+    <form action="/delete" method="post">
+        <a href="/posts/<%=post._id%>" class="col text-center footer-link">
+          <div class="category_img shadow">
+            <img src="..\upload\gallery\<%=post.photo%>" alt="<%=post.title%>">
+          </div>
+          <div class="pt-1"><%=post.type%></div>
+          <input type="hidden" name="postName" value="<%= post.title %>"></input>
+        </a>
+        <div style="text-align: center;">
+          <button type="button" class="btn btn-warning" onclick="location.href='/edits/<%=post._id%>'">Edit</button>
+          <button type="submit" name="delete"  class="btn btn-danger"  value="<%= post._id %>"onchange="this.form.submit()">Delete</button>
+        </div>
+    </form>
+          </div>
+      <% }) %>
+</div>
+
+<%- include("partials/footer"); -%>

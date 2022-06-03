@@ -1,0 +1,126 @@
+html{
+  min-height: 100%;
+  position: relative;
+}
+.navbar {
+    padding-top: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    z-index: 30;
+}
+.navbar-nav  li a:hover {
+    color: black !important;
+}
+h1{
+  margin: 95px 0px 40px 0px;
+}
+
+/* FRONT */
+
+#title{
+  background-image:url("../images/front.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 96vh;
+}
+.container-fluid{
+  padding-top: 0.5px;
+  text-align: center;
+  border-radius: 5px;
+  max-width: 750px;
+}
+.contentBx{
+    background: white;
+    margin: 150px 120px 0px 120px;
+    padding: 50px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* ABOUT */
+
+.about-main{
+  margin: 0px 20px 30px 20px;
+}
+.about{
+  margin: 0px 20px 25px 20px;
+  text-align:justify;
+}
+.adi{
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+/* POST */
+
+.feature{
+    margin: 10px auto;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.feat{
+  margin: 5px;
+}
+.box {
+  max-width: 800px;
+  height: 150px;
+  margin: 50px auto;
+  background: white;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.photo{
+  margin : 20px 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+.category_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,.16);
+  overflow: hidden;
+  border-radius: 5px;
+}
+.category_img img{
+  width: 100%;
+  object-fit: cover;
+}
+.food{
+  margin: 70px auto;
+}
+
+/* FOOTER */
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+.footer {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 20px;
+	background-color: #fff;
+}
+.footer p {
+  margin-top: 20px;
+	font-size: 12px;
+  padding-bottom: 10px;
+}
+.footer-link{
+  color:rgba(0,0,0,.5);
+  margin: 10px 30px;
+}
+.footer-link:hover{
+  color: black;
+  text-decoration: none;
+}
